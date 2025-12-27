@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3D Engineering Portfolio</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="./style.css?v=90001" />
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>Jonathan Shorey's 3D Engineering Portfolio</h1>
+      <p class="sub">Click a model to load. Drag to orbit, scroll to zoom, right-drag to pan.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- LEFT: model list -->
+    <aside class="sidebar">
+      <div class="controls">
+        <input id="search" type="text" placeholder="Search models..." />
+
+        <div class="row">
+          <button id="resetView" type="button">Reset view</button>
+          <button id="toggleGrid" type="button">Toggle 5mm Grid</button>
+        </div>
+
+        <div class="row">
+          <label class="chk"><input id="autoRotate" type="checkbox" /> Auto-rotate</label>
+          <label class="chk"><input id="wireframe" type="checkbox" /> Wireframe</label>
+        </div>
+
+        <div class="hint">3D Model List:</div>
+      </div>
+
+      <div id="list" class="list">
+        <div class="fallback">Loading models…</div>
+      </div>
+    </aside>
+
+    <!-- CENTER: viewer -->
+    <section class="viewer">
+      <div id="canvasWrap" class="canvasWrap">
+        <div class="viewerFallback">Viewer initializing...</div>
+      </div>
+    </section>
+
+    <!-- RIGHT: description panel -->
+    <aside class="rightbar">
+      <div class="rightTitle" id="metaTitle">No model loaded</div>
+      <div class="rightSub" id="metaSub">Select a model from the list.</div>
+
+      <div class="rightSectionLabel">Description</div>
+      <div class="rightDesc" id="metaDesc">Pick a model to view its notes.</div>
+
+      <div class="rightSectionLabel">Tags</div>
+      <div class="rightTags" id="metaTags"></div>
+    </aside>
+  </main>
+
+  <footer>
+    <span id="status">Page loaded. Waiting for app.js…</span>
+  </footer>
+
+  <script type="module" src="./app.js?v=90001"></script>
+</body>
+</html>

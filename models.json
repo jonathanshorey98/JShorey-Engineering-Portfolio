@@ -1,0 +1,18 @@
+[
+  {
+    "id": "laser",
+    "name": "Welcome",
+    "subtitle": "Welcome",
+    "file": "./models/laser.glb",
+    "description": "Welcome Message",
+    "tags": ["Message", "Utility"]
+  },
+  {
+    "id": "mbotproject",
+    "name": "Mbot Project ENR 161",
+    "subtitle": "All 3 Iterations",
+    "file": "./models/mbotproject.glb",
+    "description": "3 Iterations of the motor mount and hopper arms were designed (V1-V3 Left to Right) to adapt an upgraded motor and optimize puck retrieval and retention on mbot rotational moves",
+    "tags": ["MCC", "mbot"]
+  }
+]
